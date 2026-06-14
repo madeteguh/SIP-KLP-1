@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sawit-100: #9CB080;
+  --color-sawit-200: #618764;
+  --color-sawit-300: #2B5748;
+  --color-sawit-400: #273338;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
