@@ -74,27 +74,40 @@
 
     <!-- Main Content Placeholder -->
     <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-16 flex flex-col items-center justify-center text-center">
+
         <!-- Section Title: Chart -->
         <div class="w-full cursor-pointer mb-20">
-            <img src="./src/flowchartsip.png" alt="Flowchart Analisis" class="w-full h-auto rounded-2xl shadow-xl transition-all duration-500 ease-out hover:-translate-y-4 hover:shadow-[0_20px_40px_-15px_rgba(34,197,94,0.5)] hover:ring-4 hover:ring-sawit-300 border border-gray-100 bg-white p-2">
+            <img src="./src/FLOWCHARTFINAL.png" alt="Flowchart Analisis" class="w-full h-auto rounded-2xl shadow-xl transition-all duration-500 ease-out hover:-translate-y-4 border border-gray-100 bg-white p-2">
         </div>
 
-<!-- Tabel Koefisien Runoff -->
-<div class="w-full flex justify-center mb-20">
-    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-100 p-2 transition-all duration-500 hover:-translate-y-2">
-        <img src="./src/koefsip.png"
-             alt="Tabel Koefisien Runoff"
-             class="w-full h-auto rounded-xl">
-    </div>
-</div>
 
-<!-- Section Title: Chart -->
+        <!-- Section Title: Koefisien dan Diagram -->
+        <div class="w-full mb-12 flex flex-col items-center">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-4 text-center">Tabel Koefisien dan Diagram Tutupan Lahan </h2>
+            <div class="w-24 h-1.5 bg-sawit-300 rounded-full"></div>
+        </div>
 
-        <!-- Chart Image -->
-        <div class="w-full mb-20 flex justify-center cursor-pointer">
-            <div class="w-full max-w-5xl bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden p-2 transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="./src/Chart%20Penggunaan%20Lahan%20Siak.png" alt="Chart Penggunaan Lahan Siak" class="w-full h-auto rounded-xl object-contain">
+        <!-- Tabel Koefisien + Diagram -->
+        <div style="display:flex; gap:2rem; align-items:center; margin-bottom:5rem;">
+
+            <!-- KOEFISIEN -->
+            <div style="width:32%;">
+                <div class="bg-white rounded-2xl shadow-xl transition-all duration-500 ease-out hover:-translate-y-4 border border-gray-100 p-3">
+                    <img src="./src/koefsip.png"
+                        alt="Tabel Koefisien"
+                        style="width:100%; height:auto; border-radius:12px;">
+                </div>
             </div>
+
+            <!-- DIAGRAM -->
+            <div style="width:68%; display:flex; justify-content:center;">
+                <div class="bg-white rounded-2xl shadow-xl transition-all duration-500 ease-out hover:-translate-y-4 border border-gray-100 p-3">
+                    <img src="./src/diagramFINAL.png"
+                        alt="Diagram Tutupan Lahan"
+                        style="width:100%; height:auto; border-radius:12px;">
+                </div>
+            </div>
+
         </div>
 
         <!-- Section Title: Peta Analisis -->
@@ -104,18 +117,18 @@
         </div>
 
         <!-- Analisis Cards Grid -->
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div class="w-full flex flex-wrap justify-center gap-8">
             
             <!-- Card 1 -->
             <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col w-full max-w-sm hover:-translate-y-1">
                 <div class="px-6 py-5 border-b border-gray-100 flex-grow-0 flex items-center justify-center min-h-[5.5rem]">
-                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Penggunaan Lahan 2004</h3>
+                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Perubahan Sawit 2004-2024</h3>
                 </div>
                 <div class="w-full bg-white border-b border-gray-100 flex items-center justify-center">
-                    <img src="./src/penggunaan 2004.png" alt="Penggunaan Lahan 2004" class="w-full h-auto object-cover block">
+                    <img src="./src/Perubahan Sawit.png" alt="Perubahan Sawit 2004-2024" class="w-full h-auto object-cover block">
                 </div>
                 <div class="p-5 flex justify-center mt-auto bg-white">
-                    <a href="./HTML%20TOTAL/Penggunaan%20Lahan%202004/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
+                    <a href="./Perubahan Sawit 2004-2024/qgis2web_2026_06_22-16_36_10_989837/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
                         Lihat Peta
                     </a>
                 </div>
@@ -124,58 +137,13 @@
             <!-- Card 2 -->
             <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col w-full max-w-sm hover:-translate-y-1">
                 <div class="px-6 py-5 border-b border-gray-100 flex-grow-0 flex items-center justify-center min-h-[5.5rem]">
-                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Penggunaan Lahan 2024</h3>
+                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Tutupan Lahan Siak 2004 dan 2024</h3>
                 </div>
                 <div class="w-full bg-white border-b border-gray-100 flex items-center justify-center">
-                    <img src="./src/penggunaan 2024.png" alt="Penggunaan Lahan 2024" class="w-full h-auto object-cover block">
+                    <img src="./src/Tutupan Lahan.png" alt="Penggunaan Lahan 2024" class="w-full h-auto object-cover block">
                 </div>
                 <div class="p-5 flex justify-center mt-auto bg-white">
-                    <a href="./HTML%20TOTAL/Penggunaan%20Lahan%202024/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
-                        Lihat Peta
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col w-full max-w-sm hover:-translate-y-1">
-                <div class="px-6 py-5 border-b border-gray-100 flex-grow-0 flex items-center justify-center min-h-[5.5rem]">
-                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Sawit 2004</h3>
-                </div>
-                <div class="w-full bg-white border-b border-gray-100 flex items-center justify-center">
-                    <img src="./src/sawit 2004.png" alt="Sawit 2004" class="w-full h-auto object-cover block">
-                </div>
-                <div class="p-5 flex justify-center mt-auto bg-white">
-                    <a href="./HTML%20TOTAL/Sawit%202004/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
-                        Lihat Peta
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col w-full max-w-sm hover:-translate-y-1">
-                <div class="px-6 py-5 border-b border-gray-100 flex-grow-0 flex items-center justify-center min-h-[5.5rem]">
-                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Sawit 2024</h3>
-                </div>
-                <div class="w-full bg-white border-b border-gray-100 flex items-center justify-center">
-                    <img src="./src/sawit 2024.png" alt="Sawit 2024" class="w-full h-auto object-cover block">
-                </div>
-                <div class="p-5 flex justify-center mt-auto bg-white">
-                    <a href="./HTML%20TOTAL/Sawit%202024/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
-                        Lihat Peta
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col w-full max-w-sm hover:-translate-y-1 lg:col-start-2">
-                <div class="px-6 py-5 border-b border-gray-100 flex-grow-0 flex items-center justify-center min-h-[5.5rem]">
-                    <h3 class="text-[1.1rem] font-bold text-gray-800 text-center leading-tight">Selisih Sawit 2024 dan 2004</h3>
-                </div>
-                <div class="w-full bg-white border-b border-gray-100 flex items-center justify-center">
-                    <img src="./src/selisih sawit.png" alt="Selisih Sawit" class="w-full h-auto object-cover block">
-                </div>
-                <div class="p-5 flex justify-center mt-auto bg-white">
-                    <a href="./HTML%20TOTAL/Selisih%20Sawit/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
+                    <a href="./Tutupan lahan Siak 2004 dan 2024/qgis2web_2026_06_22-16_43_22_449271/index.html" target="_blank" rel="noopener noreferrer" class="bg-sawit-300 hover:bg-sawit-200 text-white font-medium py-2 px-8 rounded-lg transition-colors duration-300 shadow-md inline-block">
                         Lihat Peta
                     </a>
                 </div>
